@@ -10,17 +10,17 @@
 
 <!-- Main section -->
 <main>
-<p id="notice"><%= notice %></p>
+    <p id="notice"><%= notice %></p>
 
-<!-- New member form -->
-<h2>Ajouter un(e) Argonaute</h2>
-<%= render 'form', team: @team %>
+    <!-- New member form -->
+    <h2>Ajouter un(e) Argonaute</h2>
+    <%= render 'form', team: @team %>
 
-<!-- Member list -->
-<h2>Membres de l'équipage</h2>
-<% @teams.each do |team| %>
-<section class="member-list">
-    <div class="member-item"><%= team.name %></div>
-</section>
-<% end %>
+    <!-- Member list -->
+    <h2>Membres de l'équipage</h2>
+    <div class="member-list">
+    <% @teams.each do |team| %>
+        <div class="member-item"><%= team.name %></div> 
+    <% end %>
+    </div>
 </main>
