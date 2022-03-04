@@ -1,0 +1,10 @@
+<%= form_with(model: team, local: true) do |form| %>
+  <div class="new-member-form">
+    <label for="name">Nom de l&apos;Argonaute</label>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
